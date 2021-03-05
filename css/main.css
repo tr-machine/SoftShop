@@ -1,0 +1,503 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+/*   site   */
+body {
+    min-width: 1920px;
+    font-family: Arial;
+}
+
+#container {
+    height: 1700px;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    background: #fff;
+}
+
+@font-face {
+    font-family: Allura-Regular;
+    src: url(../fonts/Allura-Regular.ttf);
+}
+
+.name-logo {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+    font-family: 'Allura-Regular';
+    font-size: 55px;
+    color: #ff5107;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.all-social-pages {
+    position: absolute;
+    right: 25%;
+    top: 70%;
+    transform: translate(0, -70%);
+    word-spacing: 5px;
+}
+
+.all-social-pages img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
+
+hr {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+menu {
+    position: relative;
+    height: 150px;
+}
+
+.category-selection {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    word-spacing: 100px;
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: Nunito-Light;
+    src: url(../fonts/Nunito-Light.ttf);
+}
+
+.category-selection li {
+    display: inline;
+    color: #000;
+    font-family: 'Nunito-Light';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.category-selection a {
+    text-decoration: none;
+    color: #000;
+}
+
+.category-selection a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.block-menu {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 200px;
+    background: #f9e9f0;
+    left: 18.75%;
+    top: 150px;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+.block-menu-text {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Merriweather';
+}
+
+.block-menu-subtext {
+    position: absolute;
+    font-size: 17px;
+    white-space: nowrap;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.after-menu {
+    position: absolute;
+    top: 400px;
+}
+
+#content {
+    position: relative;
+    width: 1700px;
+    height: 2000px;
+    left: 50%;
+    top: 350px;
+    transform: translate(-50%);
+}
+
+
+
+
+
+/*   for women   */
+
+#woman {
+    height: 600px;
+}
+
+@font-face {
+    font-family: Lora-Regular;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+
+.for-woman {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    font-weight: 700;
+    font-family: 'Lora-Regular';
+    letter-spacing: 3px;
+    border-bottom: 2.5px solid #000;
+}
+
+.toys-img-for-woman {
+        position: relative;
+        top: 100px;
+}
+
+.toys-img-for-woman img {
+    width: 350px;
+    height: 350px;
+}
+
+.toys-img-for-woman img:hover {
+    width: 370px;
+    height: 370px;
+    border: 1px #c5c5c5 solid;
+    border-radius: 25%;
+}
+
+.toy-cow-for-woman_1 {
+    position: absolute;
+    left: 2%;
+}
+
+.toy-cow-for-woman_2 {
+    position: absolute;
+    left: 27%;
+}
+
+.toy-cow-for-woman_3 {
+    position: absolute;
+    right: 27%;
+}
+
+.toy-cow-for-woman_4 {
+    position: absolute;
+    right: 2%;
+}
+
+
+
+
+
+/*   for men   */
+
+#man {
+    height: 600px;
+}
+
+.for-man {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Lora-Regular';
+    letter-spacing: 3px;
+    border-bottom: 2.5px solid #000;
+}
+
+.toys-img-for-man {
+    position: relative;
+    top: 100px;
+}
+
+.toys-img-for-man img {
+    width: 350px;
+    height: 350px;
+}
+
+.toys-img-for-man img:hover {
+    width: 370px;
+    height: 370px;
+    border: 1px #c5c5c5 solid;
+    border-radius: 25%;
+}
+
+.toy-bull-for-man_1 {
+    position: absolute;
+    left: 2%;
+}
+
+.toy-bull-for-man_2 {
+    position: absolute;
+    left: 27%;
+}
+
+.toy-bull-for-man_3 {
+    position: absolute;
+    right: 27%;
+}
+
+.toy-bull-for-man_4 {
+    position: absolute;
+    right: 2%;
+}
+
+
+
+
+
+/*   for kids   */
+
+#kids {
+    height: 600px;
+}
+
+.for-kids {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Lora-Regular';
+    letter-spacing: 3px;
+    border-bottom: 2.5px solid #000;
+}
+
+.toys-img-for-kids {
+    position: relative;
+    top: 100px;
+}
+
+.toys-img-for-kids img {
+    width: 350px;
+    height: 350px;
+}
+
+.toys-img-for-kids img:hover {
+    width: 370px;
+    height: 370px;
+    border: 1px #c5c5c5 solid;
+    border-radius: 25%;
+}
+
+.toy-cat-for-kids_1 {
+    position: absolute;
+    left: 2%;
+}
+
+.toy-cat-for-kids_2 {
+    position: absolute;
+    left: 27%;
+}
+
+.toy-cat-for-kids_3 {
+    position: absolute;
+    right: 27%;
+}
+
+.toy-cat-for-kids_4{
+    position: absolute;
+    right: 2%;
+}
+
+
+
+
+
+/*   decor   */
+
+#decor {
+    height: 750px;
+}
+
+.for-decor {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Lora-Regular';
+    letter-spacing: 3px;
+    border-bottom: 2.5px solid #000;
+}
+
+.toys-img-for-decor {
+    position: relative;
+    top: 100px;
+}
+
+.toys-img-for-decor img {
+    width: 350px;
+    height: 350px;
+}
+
+.toys-img-for-decor img:hover {
+    width: 370px;
+    height: 370px;
+    border: 1px #c5c5c5 solid;
+    border-radius: 25%;
+}
+
+.toy-decor-for-decor_1 {
+    position: absolute;
+    left: 2%;
+}
+
+.toy-decor-for-decor_2 {
+    position: absolute;
+    left: 27%;
+}
+
+.toy-decor-for-decor_3 {
+    position: absolute;
+    right: 27%;
+}
+
+.toy-decor-for-decor_4{
+    position: absolute;
+    right: 2%;
+}
+
+
+
+
+
+/*   footer   */
+
+footer {
+    position: relative;
+    height: 85px;
+    background: rgb(244, 244, 244);
+    top: 50%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #565656;
+}
+footer a:hover {
+    color: #828282;
+}
+
+.footer-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+}
+
+.all-social-pages-for-footer {
+    position: absolute;
+    word-spacing: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40px;
+}
+
+.all-social-pages-for-footer img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
